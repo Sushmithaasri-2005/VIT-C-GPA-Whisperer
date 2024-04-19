@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT C/GPA Whisperer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 style="text-align: left;display: inline;margin-left: 0;left: 0; color: white;">VIT C/GPA Whisperer</h1>
+        <ul>
+            <li><a href="index.html"><b>Home</b> </a></li>
+            <li><a href="about.html"> <b>About</b> </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="info" style="text-align: left;">
+            <h2 style="text-align: center;">Welcome to the VIT GPA/CGPA Whisperer</h2>
+            <p style="padding: 3%; padding-top: 0; font-weight: 500;">Effortlessly calculate your Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA) tailored specifically for VIT students. Our intuitive calculator simplifies the process of tracking your academic performance, ensuring you stay on top of your studies.With our user-friendly interface and accurate calculations, managing your grades has never been easier. <br><br> Begin optimizing your academic journey with us today!</p>
+        </div>
+        <div id="output"></div>
+        
+        <div id="options">
+            <button onclick="showGPAForm()">Calculate GPA</button>
+            <button onclick="showCGPAForm()">Calculate CGPA</button>
+        </div>
+
+        <div id="gpaForm" style="display:none;">
+            <h2 style="padding: 10px;">GPA Calculator</h2>
+            <form id="gpaCalculatorForm" onsubmit="return calculateGPA()">
+                <div class="form-group">
+                    <label for="totalCourses">Total number of courses:</label>
+                    <input type="number" id="totalCourses" name="totalCourses" required><br>
+                </div>
+               
+                
+                <div class="form-group">
+                    <label for="totalCredits">Total number of credits:</label>
+                    <input type="text" id="totalCredits" name="totalCredits" pattern="[0-9]+(?:\.[0-9]+)?" required title="Enter a valid number"><br>
+                </div>
+                <div id="coursesInput"></div>
+            
+                <button type="submit">Calculate GPA</button>
+            </form>
+        </div>
+
+        <div id="cgpaForm" style="display:none;">
+            <h2>CGPA Calculator</h2>
+            <form id="cgpaCalculatorForm" onsubmit="return calculateCGPA()">
+                <div class="form-group">
+                    <label for="totalSemesters">Total number of semesters:</label>
+                    <input type="number" id="totalSemesters" name="totalSemesters" required><br>    
+                </div>
+
+                <div id="semestersInput"></div>
+
+                <button type="submit">Calculate CGPA</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
