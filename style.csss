@@ -1,1 +1,135 @@
+*
+{
+    margin: 0; padding: 0;
+    
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(140, 208, 244);
+}
+.info
+{
+    background-color: rgb(213, 239, 254,0.5) ;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.info p{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+nav {
+    background-color: #4d3ef6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 3px;
+}
+nav h1{
+    padding-left: 15px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color:  rgb(140, 208, 244);
+    color: black;
+}
+
+.container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type="number"],
+input[type="text"] {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(247, 221, 53);
+    margin: 10px;
+    width: 40 px;
+}
+button:hover
+{
+    background-color: rgb(75, 255, 195);
+    font-weight: bolder;
+}
+
+form {
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 15px; 
+}
+
+.form-group label {
+    display: inline-block;
+    width: auto; 
+    margin-right: 10px;
+    font-weight: bold; 
+}
+.form-group input {
+    width: auto;
+    border-radius: 10px;
+    border-top: none;
+    border-width: none;
+    border-right: none;
+    background-color: rgb(213, 239, 254) ;
+    
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="number"],
+form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+#output {
+    margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Auto adjust height */
+    }
+
+    nav h1 {
+        margin-bottom: 10px; /* Add spacing between the title and links */
+        text-align: center; /* Center align the title */
+    }
+
+    nav ul {
+        justify-content: center; /* Center align the links */
+    }
+
+    nav ul li {
+        display: inline; /* Reset to display inline */
+        margin: 0 10px; /* Add margin between links */
+    }
+}
 
